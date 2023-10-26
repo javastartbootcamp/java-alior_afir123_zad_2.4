@@ -10,15 +10,15 @@ public class Main {
         category2.printInfo();
 
         Product product1 = new Product("Czekolada", 3.11, "Czekolada gorzka z orzechami");
-        product1.productCategory = category1;
+        product1.category = category1;
         product1.printInfo();
 
         Product product2 = new Product("Ciastka", 5.30, "Kruche jak ta lala");
-        product2.productCategory = category1;
+        product2.category = category1;
         product2.printInfo();
 
         Product product3 = new Product("Ryba mintaj", 15.40, "Smaczna i prosta w przygotowaniu");
-        product3.productCategory = category2;
+        product3.category = category2;
         product3.printInfo();
 
         Product product4 = new Product("Pomarańcza", 5.34, "Soczysta i słodka");

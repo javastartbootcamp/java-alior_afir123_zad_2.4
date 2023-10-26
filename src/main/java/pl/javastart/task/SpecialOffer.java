@@ -2,22 +2,22 @@ package pl.javastart.task;
 
 public class SpecialOffer {
     Product productInSpecialOffer;
-    String offerDescription;
-    String offerDateFrom;
-    String offerDateTo;
+    String description;
+    String dateFrom;
+    String dateTo;
     double discount;
 
     SpecialOffer(Product prod, String desc, String from, String to, double disc) {
-        productInSpecialOffer = prod;
-        offerDescription = desc;
-        offerDateFrom = from;
-        offerDateTo = to;
-        discount = disc;
+        this.productInSpecialOffer = prod;
+        this.description = desc;
+        this.dateFrom = from;
+        this.dateTo = to;
+        this.discount = disc;
     }
 
     void printInfo() {
-        System.out.println("Opis oferty: " + offerDescription + ", Produkt w ofercie: " + productInSpecialOffer.productName
-                + ", Oferta obowiązuje od " + offerDateFrom + " do " + offerDateTo
+        System.out.println("Opis oferty: " + description + ", Produkt w ofercie: " + productInSpecialOffer.name
+                + ", Oferta obowiązuje od " + dateFrom + " do " + dateTo
                 + ", Rabat na produkt wynosi: " + discount * 100 + "%");
     }
 }

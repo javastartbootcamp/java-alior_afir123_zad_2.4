@@ -1,24 +1,24 @@
 package pl.javastart.task;
 
 public class Product {
-    String productName;
-    double productPrice;
-    String productDescription;
-    Category productCategory;
+    String name;
+    double price;
+    String description;
+    Category category;
 
     Product(String name, double price, String desc) {
-        productName = name;
-        productPrice = price;
-        productDescription = desc;
+        this.name = name;
+        this.price = price;
+        this.description = desc;
     }
 
     void printInfo() {
-        if (productCategory == null) {
-            System.out.println("Nazwa produktu: " + productName + ", Opis produktu: " + productDescription +
-                    ", Cena produktu: " + productPrice + ", Kategoria: BRAK");
+        if (category == null) {
+            System.out.println("Nazwa produktu: " + name + ", Opis produktu: " + description +
+                    ", Cena produktu: " + price + ", Kategoria: BRAK");
         } else {
-            System.out.println("Nazwa produktu: " + productName + ", Opis produktu: " + productDescription +
-                    ", Cena produktu: " + productPrice + ", Kategoria produktu: " + productCategory.categoryName);
+            System.out.println("Nazwa produktu: " + name + ", Opis produktu: " + description +
+                    ", Cena produktu: " + price + ", Kategoria produktu: " + category.name);
         }
     }
 }

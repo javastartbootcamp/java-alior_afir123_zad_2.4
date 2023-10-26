@@ -1,16 +1,16 @@
 package pl.javastart.task;
 
 public class Category {
-    String categoryName;
+    String name;
 
-    String categoryDescription;
+    String description;
 
     Category(String name, String des) {
-        categoryName = name;
-        categoryDescription = des;
+        this.name = name;
+        this.description = des;
     }
 
     void printInfo() {
-        System.out.println("Nazwa kategorii: " + categoryName + ", Opis kategorii: " + categoryDescription);
+        System.out.println("Nazwa kategorii: " + name + ", Opis kategorii: " + description);
     }
 }
